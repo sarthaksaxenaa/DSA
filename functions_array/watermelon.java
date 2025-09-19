@@ -1,6 +1,7 @@
 import java.util.*;
 public class watermelon {
     public static void main(String args[]){
+        @SuppressWarnings("resource")
         Scanner sc= new Scanner(System.in);
         int n = sc.nextInt();
         if(n%2 ==0){

@@ -1,9 +1,12 @@
 import java.util.Scanner;
 
 class Majority {
-    public int majorityElement(int[] arr) {
-        int count = 0, number = 0;
-        for(int i = 0; i < arr.length; i++){
+    int majorityElement(int arr[]) {
+        int count = 0;
+        int number = 0;
+        int n=arr.length; 
+        int c=0;
+        for(int i = 0; i < n; i++){
             if(count == 0){
                 number = arr[i];
             }
@@ -13,7 +16,14 @@ class Majority {
                 count--;
             }
         }
-        return number;
+        
+        for(int i=0;i<n;i++){
+            if(number==arr[i]){
+                c++;
+            }
+        }
+        if (c > n/2) return number;
+        return -1;
     }
     public static void main(String[] args) {
         @SuppressWarnings("resource")

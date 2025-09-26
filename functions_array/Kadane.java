@@ -1,6 +1,6 @@
 import java.util.*;
 class Kadane {
-    public int maxSubArray(int[] arr) {
+    public static int maxSubArray(int[] arr) {
         int max1=Integer.MIN_VALUE; int sum1=0, n=arr.length;
          
         for(int i=0; i<n;i++){
@@ -9,7 +9,7 @@ class Kadane {
         }
         return max1;
     }
-    int max(int a, int b){
+    public static int max(int a, int b){
         if(a>b) return a;
     return b;
     }
@@ -18,8 +18,7 @@ class Kadane {
         @SuppressWarnings("resource")
         Scanner sc =new Scanner(System.in);
         int arr[]={-1,-5,-6,-2,5,2,8,7,-10};
-        Kadane k= new Kadane();
-        int a= k.maxSubArray(arr);
+        int a= maxSubArray(arr);
         System.err.println(a);
         sc.close();
     }

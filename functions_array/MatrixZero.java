@@ -1,6 +1,6 @@
 import java.util.*;
 
-class MatrixZero {
+public class MatrixZero {
     public static void setZeroes(int[][] arr) {
         int n = arr.length;
         int m = arr[0].length;

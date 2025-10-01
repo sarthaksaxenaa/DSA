@@ -34,3 +34,4 @@ public class pattern7 {
         pattern2(n);
     }
 }
+// pattern question

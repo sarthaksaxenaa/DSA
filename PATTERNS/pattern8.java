@@ -15,3 +15,6 @@ public class pattern8 {
         }
     }
 }
+/*
+pattern and all stuff
+ */

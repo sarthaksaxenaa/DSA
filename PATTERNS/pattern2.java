@@ -26,3 +26,6 @@ class pattern2
         }
     }
 }
+/*
+ pattern modified
+ */

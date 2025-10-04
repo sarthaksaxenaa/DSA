@@ -35,3 +35,6 @@ class pattern3
         }
     }
 }
+/*
+pattern github push only
+ */

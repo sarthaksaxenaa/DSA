@@ -39,3 +39,6 @@ class pattern4
         }
     }
 }
+/*
+ AGAIN A PATTERN QUESTION
+ */

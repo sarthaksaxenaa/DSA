@@ -36,3 +36,6 @@ public class pattern5 {
     }
     
 }
+/*
+pattern questiongit
+ */

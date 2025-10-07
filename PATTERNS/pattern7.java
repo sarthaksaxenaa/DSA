@@ -34,4 +34,4 @@ public class pattern7 {
         pattern2(n);
     }
 }
-// pattern question 
+// pattern question for github push 

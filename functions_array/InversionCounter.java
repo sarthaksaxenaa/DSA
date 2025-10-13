@@ -16,3 +16,4 @@ class InversionCounter {
         System.out.println(numberOfInversions(nums));
     }
 }
+// github push question

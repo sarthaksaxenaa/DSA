@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class UpperBound{
+class SearchInsert{
 public:
-    int upperBound(vector<int> &arr, int x){
+    int searchInsert(vector<int>& arr, int target){
         int n = arr.size();
         int low = 0, high = n - 1, ans = n;
         while(low <= high){
             int mid = (low + high) / 2;
-            if(arr[mid] > x){
+            if(arr[mid] >= target){
                 ans = mid;
                 high = mid - 1;
             } else {
@@ -20,11 +20,10 @@ public:
 };
 
 int main(){
-    UpperBound obj;
-    vector<int> arr = {1, 2, 4, 6, 8, 10};
-    int x;
-    cin >> x;
-    cout << obj.upperBound(arr, x);
+    SearchInsert obj;
+    vector<int> arr = {1, 3, 5, 6};
+    int target;
+    cin >> target;
+    cout << obj.searchInsert(arr, target);
     return 0;
 }
-                

@@ -24,3 +24,4 @@ int main(){
     cout << obj.search(arr, target);
     return 0;
 }
+// Binary Search algo

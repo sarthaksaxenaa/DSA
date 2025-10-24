@@ -43,3 +43,4 @@ public:
         return { lb, ub - 1 };
     }
 };
+// find range 

@@ -26,3 +26,4 @@ int main(){
     auto ans=floorAndCeil(arr,target);
     cout<<"Floor: "<<ans.first<<" Ceil: "<<ans.second;
 }
+// floor and ceil of the target in the array

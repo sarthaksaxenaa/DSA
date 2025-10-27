@@ -35,3 +35,4 @@ int main() {
     int k = 2;
     cout << s.splitArray(a, k);
 }
+// Array spliter of subarray

@@ -27,3 +27,4 @@ int main(){
     cout << s.lowerBound(arr, x);
     return 0;
 }
+// Lower Bound 

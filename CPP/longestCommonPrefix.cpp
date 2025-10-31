@@ -24,3 +24,4 @@ int main() {
     vector<string> strs = {"flower", "flow", "flight"};
     cout << obj.longestCommonPrefix(strs);
 }
+// Longest Common Prefix algo 

@@ -21,4 +21,4 @@ int main() {
     MinFinder mf;
     cout << "Minimum element is: " << mf.findMin(nums) << endl;
     return 0;
-}
+}// find min

@@ -2,25 +2,35 @@
 using namespace std;
 
 void solve(){
-    int n ; cin >> n;
+    int n; 
+    cin >> n;
     vector<int> a(n);
-    for(int i=0; i<n; i++){
-        cin >> a[i];
+    for(int i=0;i<n;i++) cin >> a[i];
+
+    map<int,int> mp;
+    for(int x : a) mp[x]++;
+
+    if(mp.size() == 1){
+        cout << "Yes\n";
+        return;
     }
-    bool check = false;
-    for(int i=0; i<n ;i++){
-        if(a[i] == a[i+1]) check = true;
-        if(a[i] == a[i+2]) check = true;
-        else check = false; 
+
+    if(mp.size() > 2){
+        cout << "No\n";
+        return;
     }
-    if(check == true) cout << "Yes" << endl;
-    else cout << "No" << endl;
+    
+    auto it = mp.begin();
+    int f1 = it->second;
+    it++;
+    int f2 = it->second;
+
+    if(abs(f1 - f2) <= 1) cout << "Yes\n";
+    else cout << "No\n";
 }
 
 int main(){
-    int t; cin >> t;
-    while(t--){
-        solve();
-    }
-    return 0;
+    int t; 
+    cin >> t;
+    while(t--) solve();
 }

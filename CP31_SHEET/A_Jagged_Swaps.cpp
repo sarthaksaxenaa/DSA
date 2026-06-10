@@ -10,7 +10,7 @@ void solve(){
         cin >> a[i];
     }
 
-    if(a[0] == 1) cout << "YES" << endl;
+    if(a[0] == 1) cout << "YES\n";
     else cout << "NO" << endl;
 }
 

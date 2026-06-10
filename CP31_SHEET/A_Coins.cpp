@@ -11,7 +11,7 @@ void coins(long long a, long long  b){
         return;
     }
     else{
-        a = a - b;
+        a -= b;
         if (a < 0){
             cout << "NO" << endl;
             return ;

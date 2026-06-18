@@ -13,7 +13,7 @@ void solve(int n){
 
         int w = a % 10;
         a /= 10;
-
+ 
         int e = a % 10;
         a /= 10;
 

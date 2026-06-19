@@ -5,7 +5,7 @@ using namespace std;
 void solve(){
     int a,b;
     cin >> a >> b;
-
+ 
     cout << (b - a % b) % b << "\n";
 }
 

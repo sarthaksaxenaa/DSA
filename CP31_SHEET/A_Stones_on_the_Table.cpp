@@ -3,20 +3,15 @@ using namespace std;
 #define int long long
 
 void solve(){
-    int n;
-    cin >> n;
-
-    string s;
-    cin >> s;
-
-    vector<char> nums(s.begin(), s.end());
-
-    int cnt = 0;
-
-    for(int i = 1; i < n; i++){
-        if(nums[i] == nums[i - 1]) cnt++;
+    int n; cin >> n;
+    string s; cin >> s;
+    
+    int cnt=0;
+    for(int i=0; i<=n-1;i++){
+        if(s[i] == s[i+1]){
+            cnt++;
+        }
     }
-
     cout << cnt;
 }
 
@@ -24,6 +19,6 @@ int32_t main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    solve();
+        solve();
     return 0;
 }

@@ -12,7 +12,6 @@ void solve(){
         if(nums[i] + b <=5) cnt++;
     }
     cout << cnt/3;
-    
 }
 
 int32_t main(){

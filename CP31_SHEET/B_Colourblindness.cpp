@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+
+void solve(){
+    int n;
+    cin >> n;
+
+    string a, b;
+    cin >> a >> b;
+
+    for(int i = 0; i < n; i++){
+        if(a[i] == 'G') a[i] = 'B';
+        if(b[i] == 'G') b[i] = 'B';
+    }
+
+    if(a == b) cout << "YES\n";
+    else cout << "NO\n";
+}
+
+int32_t main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+
+    while(t--){
+        solve();
+    }
+
+    return 0;
+}
